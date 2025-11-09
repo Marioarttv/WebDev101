@@ -3,121 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS Arbeitsblatt - LÖSUNG</title>
+    <title>HTML & CSS Arbeitsblatt - MUSTERLÖSUNG</title>
     <style>
-        /* ============================
-           LÖSUNG AUFGABE 1: Basis-Styling
-           ============================ */
-
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             margin: 0;
             padding: 20px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            background-color: white;
+            background: white;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
-
-        /* ============================
-           LÖSUNG AUFGABE 2: Überschriften
-           ============================ */
 
         h1 {
             color: #667eea;
-            font-size: 2.5rem;
             text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
             margin-bottom: 30px;
         }
 
-        h2 {
-            color: #764ba2;
-            font-size: 1.8rem;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-
-        /* ============================
-           LÖSUNG AUFGABE 3: Listen
-           ============================ */
-
-        .aufgaben-liste {
-            background-color: #f7fafc;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-            margin-bottom: 20px;
-        }
-
-        .aufgaben-liste li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        /* ============================
-           LÖSUNG AUFGABE 4: Highlight-Box
-           ============================ */
-
-        .highlight {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .highlight h3 {
-            color: white;
-            margin-bottom: 10px;
-        }
-
-        /* ============================
-           LÖSUNG AUFGABE 5: Button
-           ============================ */
-
-        .button {
-            display: inline-block;
-            background-color: #667eea;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #764ba2;
-            transform: scale(1.05);
-        }
-
-        /* ============================
-           LÖSUNG AUFGABE 6: Info-Box
-           ============================ */
-
-        .info {
-            background-color: #fff3cd;
-            border: 2px solid #ffc107;
+        .info-box {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            color: #155724;
             padding: 15px;
             border-radius: 8px;
-            margin: 20px 0;
+            margin-bottom: 30px;
         }
 
-        /* ============================
-           LÖSUNG AUFGABE 7: Success-Box
-           ============================ */
+        .question-section {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border-left: 4px solid #667eea;
+        }
 
-        .success {
-            background-color: #d4edda;
+        .question-section h2 {
+            color: #667eea;
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .question strong {
+            color: #764ba2;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .answer-space {
+            background: #d4edda;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #28a745;
+            min-height: 30px;
+            color: #155724;
+            font-weight: 500;
+        }
+
+        .success-box {
+            background: #d4edda;
             border: 2px solid #28a745;
             color: #155724;
             padding: 20px;
@@ -125,71 +91,206 @@
             text-align: center;
             margin-top: 30px;
         }
+
+        code {
+            background: #2d3748;
+            color: #68d391;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
     </style>
 </head>
 <body>
-    <!-- ============================
-         LÖSUNG HTML TEIL
-         ============================ -->
-
     <div class="container">
-        <!-- LÖSUNG AUFGABE 8 -->
-        <h1>HTML & CSS Arbeitsblatt</h1>
+        <h1>📝 HTML & CSS Arbeitsblatt</h1>
+        <p class="subtitle">✅ MUSTERLÖSUNG für Lehrkräfte</p>
 
-        <!-- LÖSUNG AUFGABE 9 -->
-        <p>Willkommen zum interaktiven Arbeitsblatt!</p>
-
-        <div class="info">
-            <strong>✅ Dies ist die Musterlösung</strong> - Vergleiche deinen Code mit dieser Datei!
+        <div class="info-box">
+            <strong>✅ Hinweis:</strong> Dies ist die Musterlösung. Die Antworten können variieren - wichtig ist, dass die Schüler die Konzepte verstanden haben!
         </div>
 
-        <!-- LÖSUNG AUFGABE 10 -->
-        <h2>Meine Aufgaben</h2>
+        <!-- ========================
+             TEIL 1: HTML GRUNDLAGEN
+             ======================== -->
 
-        <!-- LÖSUNG AUFGABE 11 -->
-        <ul class="aufgaben-liste">
-            <li>HTML lernen</li>
-            <li>CSS verstehen</li>
-            <li>Webseiten gestalten</li>
-            <li>Eigenes Projekt starten</li>
-        </ul>
+        <div class="question-section">
+            <h2>📄 Teil 1: HTML Grundlagen</h2>
 
-        <!-- LÖSUNG AUFGABE 12 -->
-        <h2>Über mich</h2>
+            <div class="question">
+                <strong>Frage 1: Was bedeutet HTML?</strong>
+                <p>Schreibe die ausgeschriebene Bedeutung von HTML.</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG: -->
+                    HyperText Markup Language (Hypertext-Auszeichnungssprache)
+                </div>
+            </div>
 
-        <!-- LÖSUNG AUFGABE 13 -->
-        <p>Hallo! Ich bin ein Schüler der 10. Klasse und lerne gerade Webentwicklung.
-        Es macht mir großen Spaß, eigene Webseiten zu erstellen und meine Kreativität auszuleben.</p>
+            <div class="question">
+                <strong>Frage 2: Nenne 5 HTML-Tags</strong>
+                <p>Liste 5 verschiedene HTML-Tags auf (z.B. &lt;p&gt;, ...).</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG: -->
+                    &lt;p&gt;, &lt;h1&gt;, &lt;a&gt;, &lt;img&gt;, &lt;ul&gt;
+                    (Alternative: &lt;div&gt;, &lt;span&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;h2&gt;, etc.)
+                </div>
+            </div>
 
-        <!-- LÖSUNG AUFGABE 14 -->
-        <h2>Meine Hobbys</h2>
+            <div class="question">
+                <strong>Frage 3: Was macht das &lt;h1&gt; Tag?</strong>
+                <p>Erkläre, wofür das h1-Tag verwendet wird.</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG: -->
+                    Das &lt;h1&gt; Tag wird für die Hauptüberschrift einer Seite verwendet.
+                    Es ist die größte und wichtigste Überschrift (Heading 1).
+                </div>
+            </div>
 
-        <!-- LÖSUNG AUFGABE 15 -->
-        <ol>
-            <li>Programmieren lernen</li>
-            <li>Fußball spielen</li>
-            <li>Musik hören</li>
-        </ol>
+            <div class="question">
+                <strong>Frage 4: Unterschied &lt;ul&gt; und &lt;ol&gt;</strong>
+                <p>Was ist der Unterschied zwischen einer ungeordneten und einer geordneten Liste?</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG: -->
+                    &lt;ul&gt; (unordered list) = ungeordnete Liste mit Punkten/Bullets
+                    &lt;ol&gt; (ordered list) = geordnete Liste mit Nummern (1, 2, 3, ...)
+                </div>
+            </div>
 
-        <!-- Highlight-Box -->
-        <div class="highlight">
-            <h3>🎯 Gut gemacht!</h3>
-            <p>Wenn du alle Aufgaben gelöst hast, sollte diese Box schön aussehen!</p>
+            <div class="question">
+                <strong>Frage 5: HTML-Grundgerüst</strong>
+                <p>Welche 3 Haupt-Bereiche hat jede HTML-Seite? (Tipp: Beginnt mit &lt;!DOCTYPE ...)</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG: -->
+                    1. &lt;!DOCTYPE html&gt; - Dokumenttyp-Deklaration
+                    2. &lt;head&gt; - Kopfbereich mit Metadaten (nicht sichtbar)
+                    3. &lt;body&gt; - Körperbereich mit sichtbarem Inhalt
+                </div>
+            </div>
         </div>
 
-        <!-- LÖSUNG AUFGABE 16 -->
-        <h2>Kontakt</h2>
+        <!-- ========================
+             TEIL 2: CSS GRUNDLAGEN
+             ======================== -->
 
-        <!-- LÖSUNG AUFGABE 17 -->
-        <a href="mailto:deine@email.de" class="button">Schreib mir!</a>
+        <div class="question-section">
+            <h2>🎨 Teil 2: CSS Grundlagen</h2>
 
-        <!-- Erfolgs-Nachricht -->
-        <div class="success">
-            <h3>✅ Geschafft!</h3>
-            <p>Wenn diese Box grün ist und alles schön aussieht, hast du das Arbeitsblatt erfolgreich ausgefüllt!</p>
-            <p><strong>Super Arbeit! 🎉</strong></p>
+            <div class="question">
+                <strong>Frage 6: Was bedeutet CSS?</strong>
+                <p>Schreibe die ausgeschriebene Bedeutung von CSS.</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG: -->
+                    Cascading Style Sheets (Kaskadierende Stilvorlagen/Gestaltungsvorlagen)
+                </div>
+            </div>
+
+            <div class="question">
+                <strong>Frage 7: Wofür braucht man CSS?</strong>
+                <p>Erkläre in 1-2 Sätzen, wozu CSS verwendet wird.</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG: -->
+                    CSS wird verwendet, um das Aussehen und Design von HTML-Seiten zu gestalten.
+                    Man kann damit Farben, Schriften, Abstände, Größen und Layouts festlegen.
+                </div>
+            </div>
+
+            <div class="question">
+                <strong>Frage 8: Nenne 3 CSS-Eigenschaften</strong>
+                <p>Liste 3 CSS-Properties auf (z.B. color, ...).</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG: -->
+                    color, background-color, font-size
+                    (Alternative: margin, padding, border, width, height, etc.)
+                </div>
+            </div>
+
+            <div class="question">
+                <strong>Frage 9: Wie bindet man CSS ein?</strong>
+                <p>Wie kann man eine externe CSS-Datei in HTML einbinden? (Welches Tag?)</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG: -->
+                    Mit dem &lt;link&gt; Tag im &lt;head&gt; Bereich:
+                    &lt;link rel="stylesheet" href="style.css"&gt;
+                </div>
+            </div>
+
+            <div class="question">
+                <strong>Frage 10: Was macht "background-color"?</strong>
+                <p>Erkläre, was die CSS-Eigenschaft background-color macht.</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG: -->
+                    Die Eigenschaft background-color legt die Hintergrundfarbe eines HTML-Elements fest.
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================
+             TEIL 3: PRAXIS-AUFGABEN
+             ======================== -->
+
+        <div class="question-section">
+            <h2>💪 Teil 3: Mini-Praxis</h2>
+
+            <div class="question">
+                <strong>Aufgabe 1: Erstelle eine Überschrift</strong>
+                <p>Schreibe unterhalb dieses Texts eine h2-Überschrift mit dem Text "Meine erste Überschrift".</p>
+                <!-- LÖSUNG: -->
+                <h2>Meine erste Überschrift</h2>
+            </div>
+
+            <div class="question">
+                <strong>Aufgabe 2: Erstelle einen Absatz</strong>
+                <p>Schreibe einen Absatz (&lt;p&gt;) mit 1-2 Sätzen über dein Lieblingshobby.</p>
+                <!-- LÖSUNG (Beispiel): -->
+                <p>Mein Lieblingshobby ist Fußball spielen. Ich trainiere dreimal pro Woche und spiele am Wochenende Spiele.</p>
+            </div>
+
+            <div class="question">
+                <strong>Aufgabe 3: Erstelle eine Liste</strong>
+                <p>Erstelle eine ungeordnete Liste mit 3 Dingen, die du gerne isst.</p>
+                <!-- LÖSUNG (Beispiel): -->
+                <ul>
+                    <li>Pizza</li>
+                    <li>Pasta</li>
+                    <li>Schokolade</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ========================
+             TEIL 4: REFLEXION
+             ======================== -->
+
+        <div class="question-section">
+            <h2>💭 Teil 4: Reflexion</h2>
+
+            <div class="question">
+                <strong>Frage 11: Was hast du gelernt?</strong>
+                <p>Schreibe in 2-3 Sätzen, was du heute über HTML und CSS gelernt hast.</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG (Beispiel): -->
+                    Ich habe gelernt, dass HTML die Struktur einer Webseite festlegt und CSS für das Design zuständig ist.
+                    Mit HTML-Tags kann ich Überschriften, Absätze und Listen erstellen.
+                    CSS hilft mir, die Farben und das Aussehen zu gestalten.
+                </div>
+            </div>
+
+            <div class="question">
+                <strong>Frage 12: Was möchtest du noch lernen?</strong>
+                <p>Was interessiert dich am meisten an Webentwicklung?</p>
+                <div class="answer-space">
+                    <!-- LÖSUNG (Beispiel): -->
+                    Ich möchte lernen, wie man interaktive Elemente erstellt und wie man eine komplette Website mit mehreren Seiten aufbaut.
+                    Außerdem finde ich es spannend, wie man Animationen macht.
+                </div>
+            </div>
+        </div>
+
+        <div class="success-box">
+            <h3>✅ Musterlösung komplett!</h3>
+            <p>Nutze diese Datei zum Vergleichen der Schüler-Antworten.</p>
+            <p><strong>Hinweis: Individuelle Formulierungen sind völlig in Ordnung! 🎉</strong></p>
         </div>
     </div>
-
 </body>
 </html>
