@@ -13,17 +13,20 @@ Dieser Kurs führt Schüler mit Python-Vorkenntnissen in die Welt der Webentwick
 
 ## 🚀 Schnellstart
 
-### Präsentation öffnen:
+### Für Schüler - Projekt Setup:
+
+1. **Download:** Gehe zu https://github.com/Marioarttv/WebDev101
+2. **ZIP herunterladen:** Klicke auf den grünen **"<> Code"** Button → **"Download ZIP"**
+3. **Entpacken:** Rechtsklick auf die ZIP-Datei → **"Alle extrahieren..."**
+4. **VS Code öffnen:** VS Code starten → **"Datei"** → **"Ordner öffnen"** → WebDev101-Ordner wählen
+5. **Live Server installieren:** Extensions-Symbol → "Live Server" suchen → installieren
+6. **Präsentation starten:** Rechtsklick auf `index.html` → **"Open with Live Server"**
+
+### Für Lehrkräfte - Direkt öffnen:
 
 1. Öffne die Datei `index.html` in einem modernen Webbrowser
 2. Navigiere mit den Pfeiltasten oder den Buttons durch die Folien
-
-### Für VS Code mit Live Server:
-
-```bash
-# Installiere Live Server Extension in VS Code
-# Dann Rechtsklick auf index.html → "Open with Live Server"
-```
+3. Drücke `F` für Vollbild (Beamer)
 
 ## 🎮 Navigation & Shortcuts
 
@@ -53,24 +56,26 @@ WebDev101/
 └── README.md       # Diese Datei
 ```
 
-## 📚 Folienbersicht
+## 📚 Folienübersicht (18 Slides)
 
 1. **Titelfolie** - Einführung
 2. **Motivation** - Warum Webentwicklung?
 3. **Kursübersicht** - 5-Stunden-Plan
 4. **VS Code Setup** - Editor kennenlernen
-5. **HTML Grundgerüst** - Basis-Struktur
-6. **HTML Tags** - Wichtigste Elemente
-7. **HTML Beispiel** - "Über mich" Seite
-8. **CSS Einführung** - Styling Grundlagen
-9. **CSS Properties** - Wichtige Eigenschaften
-10. **CSS Beispiel** - Vorher/Nachher
-11. **Übung** - Praktische Aufgabe
-12. **Ausblick** - Nächste Stunden
-13. **Bewertung** - Kriterien
-14. **Notenskala** - Punkteverteilung
-15. **Ressourcen** - Hilfreiche Links
-16. **Los geht's!** - Start ins Coding
+5. **Projekt herunterladen** - GitHub Download Anleitung (5 Schritte)
+6. **Projekt-Struktur** - Was ist im Projekt enthalten?
+7. **HTML Grundgerüst** - Basis-Struktur
+8. **HTML Tags** - Wichtigste Elemente
+9. **HTML Beispiel** - "Über mich" Seite
+10. **CSS Einführung** - Styling Grundlagen
+11. **CSS Properties** - Wichtige Eigenschaften
+12. **CSS Beispiel** - Vorher/Nachher
+13. **Übung** - Praktische Aufgabe
+14. **Ausblick** - Nächste Stunden
+15. **Bewertung** - Kriterien
+16. **Notenskala** - Punkteverteilung
+17. **Ressourcen** - Hilfreiche Links
+18. **Los geht's!** - Start ins Coding
 
 ## 🎯 Bewertungskriterien für Schülerprojekte
 
@@ -100,19 +105,30 @@ WebDev101/
 
 1. **Technische Voraussetzungen:**
    - VS Code auf allen Schüler-PCs installiert
-   - Live Server Extension installieren
-   - Internet-Zugang für KI-Tools (Stunde 2)
+   - Internet-Zugang für GitHub-Download
+   - Browser (Chrome, Firefox, Edge)
+   - Optional: Projektor/Beamer für Präsentation
 
-2. **Erste Stunde (45 Min):**
-   - 5 Min: Motivation & Überblick
-   - 8 Min: VS Code Setup
-   - 20 Min: HTML Basics mit Live-Coding
-   - 10 Min: CSS Einführung
-   - 2 Min: Ausblick & Hausaufgabe
+2. **Erste Stunde (45 Min) - Überarbeiteter Zeitplan:**
+   - **5 Min:** Begrüßung, Motivation & Kursüberblick (Folien 1-3)
+   - **10 Min:** Projekt-Setup (Folien 4-6)
+     - GitHub aufrufen
+     - ZIP herunterladen & entpacken
+     - In VS Code öffnen
+     - Live Server installieren
+   - **15 Min:** HTML Basics (Folien 7-9)
+     - Grundgerüst erklären
+     - Wichtigste Tags zeigen
+     - Beispiel-Datei gemeinsam anschauen
+   - **10 Min:** CSS Grundlagen (Folien 10-12)
+     - CSS einbinden
+     - Wichtige Properties
+     - Vorher/Nachher-Effekt
+   - **5 Min:** Ausblick & Hausaufgabe (Folien 13-14)
 
 3. **Materialien:**
    - Diese Präsentation als Leitfaden
-   - Beispiel-Code zum Nachbauen
+   - Beispiel-Dateien im `beispiele/` Ordner
    - Checkliste für Schüler-Projekte
 
 ### Anpassungen:
@@ -127,6 +143,24 @@ Die Präsentation ist vollständig im HTML/CSS/JS Code editierbar:
 - **Hausaufgaben:** Schüler erweitern ihre "Über mich"-Seite
 - **Peer Review:** Schüler geben sich gegenseitig Feedback
 - **Portfolio:** Am Ende sammeln alle ihre Projekte in einer Klassen-Website
+
+### Tipps für den Unterricht:
+
+**Projekt-Setup (wichtig!):**
+- Führe den Download-Prozess am Beamer vor, während die Schüler mitklicken
+- Gehe Schritt für Schritt vor und warte, bis alle fertig sind
+- Habe das Projekt auf einem USB-Stick als Backup (falls Internet-Probleme)
+- Plane 10 Minuten für das Setup ein - es lohnt sich!
+
+**Live-Coding:**
+- Zeige bei den HTML/CSS-Folien live in VS Code, wie man programmiert
+- Mache absichtlich kleine Fehler und zeige, wie man sie findet
+- Ermutige Schüler, eigene Ideen auszuprobieren
+
+**Hilfestellung:**
+- Erstelle ein "Hilfe-System": Schüler heben die Hand, aber fragen erst ihren Nachbarn
+- Die Beispiel-Dateien sind perfekt als Referenz
+- Ermutige Nutzung der Browser-Entwicklertools (F12)
 
 ## 🔧 Features der Präsentation
 
