@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unterrichtsskizze - HTML & CSS Einführung</title>
+    <style>
+        /* Print-optimiertes Styling */
+        @page {
+            margin: 2cm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+            line-height: 1.4;
+            padding: 20px;
+            max-width: 210mm;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18pt;
+            margin-bottom: 20px;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
+        .header-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 20px;
+            margin-bottom: 25px;
+            font-size: 11pt;
+        }
+
+        .info-field {
+            display: flex;
+            gap: 5px;
+        }
+
+        .info-field label {
+            font-weight: bold;
+            min-width: 140px;
+        }
+
+        .info-field .fill-in {
+            flex: 1;
+            border-bottom: 1px solid black;
+            min-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 12pt;
+            margin-bottom: 8px;
+        }
+
+        .section-content {
+            padding-left: 10px;
+            font-size: 11pt;
+        }
+
+        .goals-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .goals-list li {
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .goals-list li:before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+        }
+
+        /* Tabelle */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 10pt;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        th {
+            background: #f0f0f0;
+            font-weight: bold;
+            font-size: 10pt;
+        }
+
+        .time-col { width: 8%; }
+        .phase-col { width: 12%; }
+        .teacher-col { width: 25%; }
+        .student-col { width: 25%; }
+        .social-col { width: 15%; }
+        .media-col { width: 15%; }
+
+        /* Druckoptimierung */
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            table {
+                page-break-inside: avoid;
+            }
+
+            tr {
+                page-break-inside: avoid;
+            }
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .print-button:hover {
+            background: #764ba2;
+        }
+
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">🖨️ Drucken</button>
+
+    <h1>Unterrichtsskizze im Fach Informatik</h1>
+
+    <div class="header-info">
+        <div class="info-field">
+            <label>Name Studierende(r):</label>
+            <div class="fill-in"></div>
+        </div>
+        <div class="info-field">
+            <label>Schule:</label>
+            <div class="fill-in"></div>
+        </div>
+        <div class="info-field">
+            <label>Klasse:</label>
+            <div class="fill-in">10</div>
+        </div>
+        <div class="info-field">
+            <label>Raum:</label>
+            <div class="fill-in"></div>
+        </div>
+        <div class="info-field">
+            <label>Datum:</label>
+            <div class="fill-in"></div>
+        </div>
+        <div class="info-field">
+            <label>Uhrzeit:</label>
+            <div class="fill-in"></div>
+        </div>
+        <div class="info-field">
+            <label>Ausbildungslehrer(in):</label>
+            <div class="fill-in"></div>
+        </div>
+        <div class="info-field">
+            <label>Betreuer:</label>
+            <div class="fill-in"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Thema der Stunde:</div>
+        <div class="section-content">
+            Einführung in HTML & CSS - Grundlagen der Webentwicklung
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Grobziel:</div>
+        <div class="section-content">
+            Die Schülerinnen und Schüler verstehen die Grundkonzepte von HTML und CSS und können eine einfache Webseite mit Grundgerüst, verschiedenen HTML-Tags und einfachem Styling erstellen.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Feinziele:</div>
+        <div class="section-content">
+            <ul class="goals-list">
+                <li>Die SuS können das WebDev101-Projekt von GitHub herunterladen, entpacken und in VS Code öffnen</li>
+                <li>Die SuS können die Grundstruktur einer HTML-Seite (DOCTYPE, html, head, body) benennen und deren Funktion erklären</li>
+                <li>Die SuS können mindestens 5 verschiedene HTML-Tags (h1, p, ul, ol, a) erkennen und deren Verwendungszweck beschreiben</li>
+                <li>Die SuS können den Unterschied zwischen HTML (Struktur) und CSS (Design) erklären</li>
+                <li>Die SuS können eine externe CSS-Datei einbinden und einfache CSS-Properties (color, background-color, font-size) anwenden</li>
+                <li>Die SuS können Fragen im Arbeitsblatt zu HTML & CSS Basics beantworten</li>
+            </ul>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="time-col">Zeit</th>
+                <th class="phase-col">Phase</th>
+                <th class="teacher-col">Lehreraktivität<br>(Fragen / Arbeitsauftrag)</th>
+                <th class="student-col">Schüleraktivität<br>(erwartete Reaktionen)</th>
+                <th class="social-col">Sozialform /<br>Feinziel</th>
+                <th class="media-col">Medien /<br>didakt. Kommentar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5 Min</td>
+                <td>Einstieg &amp; Motivation</td>
+                <td>
+                    L begrüßt SuS und zeigt am Beamer die Titelfolie.<br><br>
+                    L fragt: "Wer von euch nutzt täglich Webseiten? Was macht eine gute Website aus?"<br><br>
+                    L stellt Kursüberblick vor (Folien 1-3): 5 Stunden, eigenes Projekt
+                </td>
+                <td>
+                    SuS melden sich und nennen Beispiele (Instagram, YouTube, etc.)<br><br>
+                    SuS zeigen Interesse am eigenen Projekt
+                </td>
+                <td>
+                    Plenum<br><br>
+                    Feinziel 4 anbahnen
+                </td>
+                <td>
+                    Beamer,<br>
+                    Präsentation (Folien 1-3)<br><br>
+                    Motivation durch Lebensweltbezug
+                </td>
+            </tr>
+            <tr>
+                <td>10 Min</td>
+                <td>Projekt-Setup</td>
+                <td>
+                    L führt Schritt-für-Schritt am Beamer vor (Folien 4-6):<br>
+                    1. GitHub aufrufen<br>
+                    2. ZIP herunterladen<br>
+                    3. Entpacken<br>
+                    4. In VS Code öffnen<br>
+                    5. Live Server installieren<br><br>
+                    L wartet nach jedem Schritt, bis alle SuS fertig sind
+                </td>
+                <td>
+                    SuS folgen den Anweisungen parallel am eigenen PC<br><br>
+                    SuS helfen sich gegenseitig bei Problemen<br><br>
+                    SuS testen Live Server mit Beispiel-Datei
+                </td>
+                <td>
+                    Einzelarbeit mit Unterstützung<br><br>
+                    Feinziel 1
+                </td>
+                <td>
+                    Beamer,<br>
+                    Schüler-PCs,<br>
+                    VS Code,<br>
+                    Internet<br><br>
+                    Kleinschrittig vorgehen!
+                </td>
+            </tr>
+            <tr>
+                <td>15 Min</td>
+                <td>HTML Grundlagen</td>
+                <td>
+                    L erklärt HTML-Grundgerüst am Beamer (Folien 7-9)<br><br>
+                    L zeigt live in VS Code: 01-grundgeruest.html<br><br>
+                    L erklärt wichtigste Tags: h1-h6, p, ul, ol, li, a<br><br>
+                    L öffnet 02-ueber-mich.html als Beispiel<br><br>
+                    Frage: "Was macht der &lt;a&gt;-Tag?"
+                </td>
+                <td>
+                    SuS schauen zu und machen sich Notizen<br><br>
+                    SuS öffnen parallel die Dateien in VS Code<br><br>
+                    SuS antworten: "Erstellt einen Link"<br><br>
+                    SuS erkunden die Beispiel-Dateien
+                </td>
+                <td>
+                    Lehrervortrag mit Live-Demo<br><br>
+                    Feinziele 2, 3
+                </td>
+                <td>
+                    Beamer,<br>
+                    VS Code (live),<br>
+                    Beispiel-Dateien<br><br>
+                    Visualisierung durch Browser-Vorschau
+                </td>
+            </tr>
+            <tr>
+                <td>10 Min</td>
+                <td>CSS Einführung</td>
+                <td>
+                    L erklärt: "HTML = Struktur, CSS = Design" (Folien 10-12)<br><br>
+                    L zeigt Vorher/Nachher-Vergleich am Beamer<br><br>
+                    L demonstriert live: 03-mit-css.html<br><br>
+                    L öffnet style.css und ändert Farbe → sofortiger Effekt im Browser
+                </td>
+                <td>
+                    SuS verstehen den Unterschied zwischen HTML und CSS<br><br>
+                    SuS beobachten Live-Änderung und sehen direkten Effekt<br><br>
+                    SuS experimentieren selbst mit der Datei
+                </td>
+                <td>
+                    Lehrervortrag &amp; Demonstration<br><br>
+                    Feinziele 4, 5
+                </td>
+                <td>
+                    Beamer,<br>
+                    VS Code (live),<br>
+                    Browser<br><br>
+                    Aha-Effekt durch direktes visuelles Feedback
+                </td>
+            </tr>
+            <tr>
+                <td>5 Min</td>
+                <td>Übung &amp; Ausblick</td>
+                <td>
+                    L teilt Arbeitsblatt aus (Folie 13):<br>
+                    "Öffnet 04-arbeitsblatt.html und beantwortet die Fragen"<br><br>
+                    L gibt Ausblick auf nächste Stunde: KI-Tools<br><br>
+                    Hausaufgabe: Arbeitsblatt fertig ausfüllen
+                </td>
+                <td>
+                    SuS öffnen das Arbeitsblatt<br><br>
+                    SuS beginnen mit den ersten Fragen<br><br>
+                    SuS notieren Hausaufgabe
+                </td>
+                <td>
+                    Einzelarbeit<br><br>
+                    Feinziel 6 anbahnen
+                </td>
+                <td>
+                    04-arbeitsblatt.html<br><br>
+                    Vertiefung zu Hause, niederschwelliger Einstieg
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="section" style="margin-top: 20px;">
+        <div class="section-title">Materialien:</div>
+        <div class="section-content">
+            <ul class="goals-list">
+                <li>WebDev101-Präsentation (Folien 1-14)</li>
+                <li>Beispiel-Dateien im <code>beispiele/</code> Ordner</li>
+                <li>04-arbeitsblatt.html (für SuS)</li>
+                <li>04-arbeitsblatt-loesung.html (für Lehrkraft)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Hinweise:</div>
+        <div class="section-content">
+            <ul class="goals-list">
+                <li>USB-Stick mit Projekt als Backup (falls Internet-Probleme)</li>
+                <li>VS Code sollte auf allen PCs vorinstalliert sein</li>
+                <li>Bei Zeitproblemen: CSS-Teil kürzen, Fokus auf HTML legen</li>
+                <li>Differenzierung: Schnelle SuS können fortgeschrittenes Arbeitsblatt nutzen</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
