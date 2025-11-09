@@ -27,9 +27,10 @@ Die gleiche Seite, aber mit schönem Design!
 
 ### 4. `04-arbeitsblatt.html` ⭐ NEU
 Interaktives Arbeitsblatt zum Üben!
-- 15 Aufgaben zu HTML & CSS
+- 17 Aufgaben zu HTML & CSS (7 CSS + 10 HTML)
 - Lücken direkt im Code ausfüllen
 - Live-Vorschau beim Speichern
+- Info-Box und Success-Box werden erst schön, wenn CSS richtig ist
 - **Perfekt für die erste Unterrichtsstunde!**
 
 ### 5. `04-arbeitsblatt-loesung.html` 🔒
