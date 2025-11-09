@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev101 - HTML & CSS Crashkurs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="presentation">
+        <!-- Slide 1: Titel -->
+        <section class="slide active">
+            <h1>🌐 WebDev101</h1>
+            <h2>HTML & CSS Crashkurs</h2>
+            <p class="subtitle">Für Realschule 10. Klasse</p>
+            <div class="meta">
+                <p>5 Unterrichtsstunden · Von HTML-Basics zu eigenen Projekten</p>
+            </div>
+        </section>
+
+        <!-- Slide 2: Motivation -->
+        <section class="slide">
+            <h1>🚀 Warum Webentwicklung?</h1>
+            <div class="content-grid">
+                <div class="motivation-box">
+                    <h3>✨ Kreativität</h3>
+                    <p>Eigene Ideen visuell umsetzen</p>
+                </div>
+                <div class="motivation-box">
+                    <h3>🌍 Reichweite</h3>
+                    <p>Jeder kann deine Website besuchen</p>
+                </div>
+                <div class="motivation-box">
+                    <h3>💼 Zukunft</h3>
+                    <p>Gefragte Fähigkeit im Job-Markt</p>
+                </div>
+                <div class="motivation-box">
+                    <h3>🎮 Spaß</h3>
+                    <p>Sofortige visuelle Ergebnisse</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Kursübersicht -->
+        <section class="slide">
+            <h1>📅 5-Stunden-Plan</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker hour1">1</div>
+                    <div class="timeline-content">
+                        <h3>Stunde 1: HTML & CSS Basics</h3>
+                        <p>Erste eigene Webseite erstellen</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker hour2">2</div>
+                    <div class="timeline-content">
+                        <h3>Stunde 2: KI als Werkzeug</h3>
+                        <p>Claude/ChatGPT für Code-Hilfe nutzen</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker hour3">3-5</div>
+                    <div class="timeline-content">
+                        <h3>Stunden 3-5: Eigenes Projekt</h3>
+                        <p>Portfolio, Fan-Seite, oder eigene Idee</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: VS Code Setup -->
+        <section class="slide">
+            <h1>💻 VS Code - Unser Werkzeug</h1>
+            <div class="two-column">
+                <div>
+                    <h3>Was ist VS Code?</h3>
+                    <ul>
+                        <li>Kostenloser Code-Editor von Microsoft</li>
+                        <li>Unterstützt alle Web-Sprachen</li>
+                        <li>Viele hilfreiche Erweiterungen</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem;">Wichtige Shortcuts:</h3>
+                    <div class="shortcut-list">
+                        <div><kbd>Strg</kbd> + <kbd>S</kbd> = Speichern</div>
+                        <div><kbd>Strg</kbd> + <kbd>Z</kbd> = Rückgängig</div>
+                        <div><kbd>Alt</kbd> + <kbd>B</kbd> = Im Browser öffnen</div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Erste Schritte:</h3>
+                    <ol class="setup-steps">
+                        <li>VS Code öffnen</li>
+                        <li>"Ordner öffnen" → Neuen Ordner erstellen</li>
+                        <li>Datei erstellen: <code>index.html</code></li>
+                        <li>Extension installieren: "Live Server"</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: HTML Grundgerüst -->
+        <section class="slide">
+            <h1>📄 HTML Grundgerüst</h1>
+            <div class="code-explanation">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="de"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Meine erste Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hallo Welt!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <div class="explanation-boxes">
+                    <div class="explain-item">
+                        <strong>&lt;!DOCTYPE html&gt;</strong>
+                        <p>Sagt dem Browser: "Das ist HTML5"</p>
+                    </div>
+                    <div class="explain-item">
+                        <strong>&lt;head&gt;</strong>
+                        <p>Infos über die Seite (nicht sichtbar)</p>
+                    </div>
+                    <div class="explain-item">
+                        <strong>&lt;body&gt;</strong>
+                        <p>Der sichtbare Inhalt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Wichtige HTML Tags -->
+        <section class="slide">
+            <h1>🏷️ Die wichtigsten HTML-Tags</h1>
+            <div class="tag-grid">
+                <div class="tag-card">
+                    <code>&lt;h1&gt; bis &lt;h6&gt;</code>
+                    <p>Überschriften (1 = größte)</p>
+                </div>
+                <div class="tag-card">
+                    <code>&lt;p&gt;</code>
+                    <p>Absatz / Paragraph</p>
+                </div>
+                <div class="tag-card">
+                    <code>&lt;a href="..."&gt;</code>
+                    <p>Link zu anderer Seite</p>
+                </div>
+                <div class="tag-card">
+                    <code>&lt;img src="..."&gt;</code>
+                    <p>Bild einfügen</p>
+                </div>
+                <div class="tag-card">
+                    <code>&lt;ul&gt; &lt;li&gt;</code>
+                    <p>Aufzählungsliste</p>
+                </div>
+                <div class="tag-card">
+                    <code>&lt;ol&gt; &lt;li&gt;</code>
+                    <p>Nummerierte Liste</p>
+                </div>
+                <div class="tag-card">
+                    <code>&lt;div&gt;</code>
+                    <p>Container / Box</p>
+                </div>
+                <div class="tag-card">
+                    <code>&lt;span&gt;</code>
+                    <p>Inline-Container</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: HTML Beispiel -->
+        <section class="slide">
+            <h1>✍️ Beispiel: Über mich Seite</h1>
+            <div class="split-view">
+                <div class="code-side">
+                    <h3>HTML-Code:</h3>
+                    <pre><code>&lt;h1&gt;Über mich&lt;/h1&gt;
+&lt;p&gt;Hallo! Ich bin Max.&lt;/p&gt;
+
+&lt;h2&gt;Meine Hobbys:&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li&gt;Fußball&lt;/li&gt;
+    &lt;li&gt;Gaming&lt;/li&gt;
+    &lt;li&gt;Programmieren&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a href="kontakt.html"&gt;
+    Kontakt
+&lt;/a&gt;</code></pre>
+                </div>
+                <div class="preview-side">
+                    <h3>So sieht's aus:</h3>
+                    <div class="browser-preview">
+                        <h1 style="font-size: 1.5rem; margin: 0.5rem 0;">Über mich</h1>
+                        <p style="margin: 0.5rem 0;">Hallo! Ich bin Max.</p>
+                        <h2 style="font-size: 1.2rem; margin: 0.5rem 0;">Meine Hobbys:</h2>
+                        <ul style="margin: 0.5rem 0;">
+                            <li>Fußball</li>
+                            <li>Gaming</li>
+                            <li>Programmieren</li>
+                        </ul>
+                        <a href="#" style="color: #0066cc;">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: CSS Einführung -->
+        <section class="slide">
+            <h1>🎨 CSS - Styling für deine Website</h1>
+            <div class="two-column">
+                <div>
+                    <h3>Was ist CSS?</h3>
+                    <p><strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
+                    <p>CSS macht deine Website schön!</p>
+
+                    <h3 style="margin-top: 2rem;">Drei Möglichkeiten:</h3>
+                    <ol>
+                        <li><strong>Inline:</strong> Direkt im Tag
+                            <pre style="font-size: 0.8rem;"><code>&lt;p style="color: red;"&gt;</code></pre>
+                        </li>
+                        <li><strong>Internal:</strong> Im &lt;head&gt;
+                            <pre style="font-size: 0.8rem;"><code>&lt;style&gt; p { } &lt;/style&gt;</code></pre>
+                        </li>
+                        <li><strong>External:</strong> Eigene Datei ✅
+                            <pre style="font-size: 0.8rem;"><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Grundstruktur:</h3>
+                    <pre><code>/* Selektor */
+h1 {
+    /* Eigenschaften */
+    color: blue;
+    font-size: 32px;
+    text-align: center;
+}
+
+p {
+    color: gray;
+    line-height: 1.6;
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: CSS Properties -->
+        <section class="slide">
+            <h1>🎯 Wichtige CSS-Eigenschaften</h1>
+            <div class="css-properties">
+                <div class="property-category">
+                    <h3>Farben & Hintergrund</h3>
+                    <ul>
+                        <li><code>color</code> - Textfarbe</li>
+                        <li><code>background-color</code> - Hintergrundfarbe</li>
+                        <li><code>background-image</code> - Hintergrundbild</li>
+                    </ul>
+                </div>
+                <div class="property-category">
+                    <h3>Text & Schrift</h3>
+                    <ul>
+                        <li><code>font-size</code> - Schriftgröße</li>
+                        <li><code>font-family</code> - Schriftart</li>
+                        <li><code>text-align</code> - Ausrichtung</li>
+                        <li><code>font-weight</code> - Fett/Normal</li>
+                    </ul>
+                </div>
+                <div class="property-category">
+                    <h3>Abstände & Größen</h3>
+                    <ul>
+                        <li><code>margin</code> - Außenabstand</li>
+                        <li><code>padding</code> - Innenabstand</li>
+                        <li><code>width</code> / <code>height</code> - Größe</li>
+                    </ul>
+                </div>
+                <div class="property-category">
+                    <h3>Layout & Rahmen</h3>
+                    <ul>
+                        <li><code>border</code> - Rahmen</li>
+                        <li><code>border-radius</code> - Runde Ecken</li>
+                        <li><code>display</code> - Anzeigemodus</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 10: CSS Beispiel -->
+        <section class="slide">
+            <h1>✨ Vorher/Nachher mit CSS</h1>
+            <div class="before-after">
+                <div class="before">
+                    <h3>❌ Ohne CSS</h3>
+                    <div class="preview-box plain">
+                        <h2>Meine Website</h2>
+                        <p>Das ist ein Absatz ohne Styling.</p>
+                        <button>Klick mich</button>
+                    </div>
+                </div>
+                <div class="after">
+                    <h3>✅ Mit CSS</h3>
+                    <div class="preview-box styled">
+                        <h2>Meine Website</h2>
+                        <p>Das ist ein Absatz mit schönem Styling!</p>
+                        <button>Klick mich</button>
+                    </div>
+                    <pre style="margin-top: 1rem; font-size: 0.7rem;"><code>h2 { color: #2563eb; }
+p { color: #64748b; }
+button {
+    background: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 11: Übung -->
+        <section class="slide">
+            <h1>💪 Praktische Übung</h1>
+            <div class="exercise-box">
+                <h2>Aufgabe: "Über mich" Seite</h2>
+                <div class="requirements">
+                    <h3>Anforderungen:</h3>
+                    <ul class="checklist">
+                        <li>✓ Eine Hauptüberschrift mit deinem Namen</li>
+                        <li>✓ Einen Absatz über dich (2-3 Sätze)</li>
+                        <li>✓ Liste mit mindestens 3 Hobbys</li>
+                        <li>✓ Ein Bild (kann Platzhalter sein)</li>
+                        <li>✓ CSS: Ändere Farben und Schriftgrößen</li>
+                        <li>✓ CSS: Füge einen Hintergrund hinzu</li>
+                    </ul>
+                </div>
+                <div class="time-info">
+                    <p>⏱️ Zeit: 15 Minuten</p>
+                    <p>💡 Tipp: Nutze die Tags von Slide 6!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 12: Ausblick nächste Stunden -->
+        <section class="slide">
+            <h1>🔮 Was kommt als Nächstes?</h1>
+            <div class="next-lessons">
+                <div class="lesson-preview">
+                    <div class="lesson-number">Stunde 2</div>
+                    <h3>KI-gestützte Entwicklung</h3>
+                    <ul>
+                        <li>Claude & ChatGPT als Coding-Assistenten</li>
+                        <li>Richtige Fragen stellen (Prompting)</li>
+                        <li>Code verstehen & anpassen</li>
+                        <li>Fehler debuggen mit KI</li>
+                    </ul>
+                </div>
+                <div class="lesson-preview">
+                    <div class="lesson-number">Stunde 3-5</div>
+                    <h3>Dein eigenes Projekt</h3>
+                    <ul>
+                        <li>Thema frei wählbar!</li>
+                        <li>Portfolio-Website</li>
+                        <li>Fan-Seite (Gaming, Musik, Sport)</li>
+                        <li>Info-Seite zu einem Thema</li>
+                        <li>Kreativ werden! 🎨</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 13: Bewertungskriterien -->
+        <section class="slide">
+            <h1>📊 Wie wird bewertet?</h1>
+            <div class="grading-criteria">
+                <div class="criteria-card">
+                    <div class="criteria-header">
+                        <span class="percentage">40%</span>
+                        <h3>Technische Umsetzung</h3>
+                    </div>
+                    <ul>
+                        <li>Valides HTML-Grundgerüst</li>
+                        <li>Min. 10 verschiedene CSS-Properties</li>
+                        <li>Responsive Design</li>
+                        <li>Sauberer, eingerückter Code</li>
+                    </ul>
+                </div>
+                <div class="criteria-card">
+                    <div class="criteria-header">
+                        <span class="percentage">30%</span>
+                        <h3>Kreativität & Inhalt</h3>
+                    </div>
+                    <ul>
+                        <li>Eigene Idee umgesetzt</li>
+                        <li>Konsistentes Design</li>
+                        <li>Sinnvoller Inhalt</li>
+                    </ul>
+                </div>
+                <div class="criteria-card">
+                    <div class="criteria-header">
+                        <span class="percentage">20%</span>
+                        <h3>Arbeitsprozess</h3>
+                    </div>
+                    <ul>
+                        <li>Selbstständiges Arbeiten</li>
+                        <li>Sinnvoller KI-Einsatz</li>
+                        <li>Problemlösungskompetenz</li>
+                    </ul>
+                </div>
+                <div class="criteria-card">
+                    <div class="criteria-header">
+                        <span class="percentage">10%</span>
+                        <h3>Präsentation</h3>
+                    </div>
+                    <ul>
+                        <li>2-Min-Vorstellung</li>
+                        <li>Herausforderung erklären</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 14: Notenskala -->
+        <section class="slide">
+            <h1>📈 Notenskala</h1>
+            <div class="grade-scale">
+                <div class="grade-item grade-1">
+                    <div class="grade-number">1</div>
+                    <div class="grade-text">
+                        <strong>Sehr gut</strong>
+                        <p>90-100 Punkte</p>
+                    </div>
+                </div>
+                <div class="grade-item grade-2">
+                    <div class="grade-number">2</div>
+                    <div class="grade-text">
+                        <strong>Gut</strong>
+                        <p>75-89 Punkte</p>
+                    </div>
+                </div>
+                <div class="grade-item grade-3">
+                    <div class="grade-number">3</div>
+                    <div class="grade-text">
+                        <strong>Befriedigend</strong>
+                        <p>60-74 Punkte</p>
+                    </div>
+                </div>
+                <div class="grade-item grade-4">
+                    <div class="grade-number">4</div>
+                    <div class="grade-text">
+                        <strong>Ausreichend</strong>
+                        <p>45-59 Punkte</p>
+                    </div>
+                </div>
+            </div>
+            <p class="motivation-text" style="text-align: center; margin-top: 2rem; font-size: 1.2rem;">
+                💡 Traut euch kreativ zu sein und habt Spaß am Projekt!
+            </p>
+        </section>
+
+        <!-- Slide 15: Ressourcen -->
+        <section class="slide">
+            <h1>📚 Hilfreiche Ressourcen</h1>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>🌐 W3Schools</h3>
+                    <p>w3schools.com</p>
+                    <small>Tutorials & Nachschlagewerk (Deutsch/Englisch)</small>
+                </div>
+                <div class="resource-card">
+                    <h3>🎨 Coolors</h3>
+                    <p>coolors.co</p>
+                    <small>Farbpaletten-Generator</small>
+                </div>
+                <div class="resource-card">
+                    <h3>🖼️ Unsplash</h3>
+                    <p>unsplash.com</p>
+                    <small>Kostenlose Bilder</small>
+                </div>
+                <div class="resource-card">
+                    <h3>💬 Claude/ChatGPT</h3>
+                    <p>KI-Assistenten</p>
+                    <small>Bei Fragen & Problemen</small>
+                </div>
+                <div class="resource-card">
+                    <h3>🎯 Google Fonts</h3>
+                    <p>fonts.google.com</p>
+                    <small>Kostenlose Schriftarten</small>
+                </div>
+                <div class="resource-card">
+                    <h3>🔧 MDN Web Docs</h3>
+                    <p>developer.mozilla.org</p>
+                    <small>Detaillierte Dokumentation</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 16: Los geht's! -->
+        <section class="slide">
+            <h1>🚀 Bereit zum Coden?</h1>
+            <div class="final-slide">
+                <div class="checklist-final">
+                    <h2>Checklist:</h2>
+                    <div class="check-item">✅ VS Code installiert & geöffnet</div>
+                    <div class="check-item">✅ Projektordner erstellt</div>
+                    <div class="check-item">✅ index.html Datei angelegt</div>
+                    <div class="check-item">✅ Live Server Extension installiert</div>
+                </div>
+                <div class="start-coding">
+                    <h2 style="font-size: 3rem; margin: 2rem 0;">Let's Code! 💻</h2>
+                    <p style="font-size: 1.5rem;">Viel Erfolg & Spaß beim Lernen!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <button id="prevBtn" class="nav-btn">← Zurück</button>
+        <span id="slideCounter" class="slide-counter">1 / 16</span>
+        <button id="nextBtn" class="nav-btn">Weiter →</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
