@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Arbeitsblatt - LÖSUNG</title>
+    <style>
+        /* ============================
+           LÖSUNG AUFGABE 1: Basis-Styling
+           ============================ */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* ============================
+           LÖSUNG AUFGABE 2: Überschriften
+           ============================ */
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #764ba2;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        /* ============================
+           LÖSUNG AUFGABE 3: Listen
+           ============================ */
+
+        .aufgaben-liste {
+            background-color: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 20px;
+        }
+
+        .aufgaben-liste li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        /* ============================
+           LÖSUNG AUFGABE 4: Highlight-Box
+           ============================ */
+
+        .highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .highlight h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        /* ============================
+           LÖSUNG AUFGABE 5: Button
+           ============================ */
+
+        .button {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #764ba2;
+            transform: scale(1.05);
+        }
+
+        /* Info & Success Boxen */
+        .info {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .success {
+            background-color: #d4edda;
+            border: 2px solid #28a745;
+            color: #155724;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ============================
+         LÖSUNG HTML TEIL
+         ============================ -->
+
+    <div class="container">
+        <!-- LÖSUNG AUFGABE 6 -->
+        <h1>HTML & CSS Arbeitsblatt</h1>
+
+        <!-- LÖSUNG AUFGABE 7 -->
+        <p>Willkommen zum interaktiven Arbeitsblatt!</p>
+
+        <div class="info">
+            <strong>✅ Dies ist die Musterlösung</strong> - Vergleiche deinen Code mit dieser Datei!
+        </div>
+
+        <!-- LÖSUNG AUFGABE 8 -->
+        <h2>Meine Aufgaben</h2>
+
+        <!-- LÖSUNG AUFGABE 9 -->
+        <ul class="aufgaben-liste">
+            <li>HTML lernen</li>
+            <li>CSS verstehen</li>
+            <li>Webseiten gestalten</li>
+            <li>Eigenes Projekt starten</li>
+        </ul>
+
+        <!-- LÖSUNG AUFGABE 10 -->
+        <h2>Über mich</h2>
+
+        <!-- LÖSUNG AUFGABE 11 -->
+        <p>Hallo! Ich bin ein Schüler der 10. Klasse und lerne gerade Webentwicklung.
+        Es macht mir großen Spaß, eigene Webseiten zu erstellen und meine Kreativität auszuleben.</p>
+
+        <!-- LÖSUNG AUFGABE 12 -->
+        <h2>Meine Hobbys</h2>
+
+        <!-- LÖSUNG AUFGABE 13 -->
+        <ol>
+            <li>Programmieren lernen</li>
+            <li>Fußball spielen</li>
+            <li>Musik hören</li>
+        </ol>
+
+        <!-- Highlight-Box -->
+        <div class="highlight">
+            <h3>🎯 Gut gemacht!</h3>
+            <p>Wenn du alle Aufgaben gelöst hast, sollte diese Box schön aussehen!</p>
+        </div>
+
+        <!-- LÖSUNG AUFGABE 14 -->
+        <h2>Kontakt</h2>
+
+        <!-- LÖSUNG AUFGABE 15 -->
+        <a href="mailto:deine@email.de" class="button">Schreib mir!</a>
+
+        <!-- Erfolgs-Nachricht -->
+        <div class="success">
+            <h3>✅ Geschafft!</h3>
+            <p>Wenn diese Box grün ist und alles schön aussieht, hast du das Arbeitsblatt erfolgreich ausgefüllt!</p>
+            <p><strong>Super Arbeit! 🎉</strong></p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -888,6 +888,13 @@ kbd {
     color: white;
     padding: 3rem 4rem;
     border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.start-coding h2,
+.start-coding p {
+    color: white !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== Navigation ===== */
