@@ -724,6 +724,137 @@ kbd {
     font-size: 0.9rem;
 }
 
+/* ===== Project Setup Slide ===== */
+.project-setup {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.setup-intro {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.setup-intro p {
+    color: white;
+    margin: 0;
+}
+
+.setup-steps-detailed {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.step-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+.step-number {
+    min-width: 50px;
+    height: 50px;
+    background: #667eea;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.success-message {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+.success-message h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.success-message p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== Info & Task Boxes ===== */
+.info-box {
+    background: #edf2f7;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.info-box p {
+    margin-bottom: 1rem;
+}
+
+.info-box strong {
+    color: #667eea;
+}
+
+.info-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info-box li {
+    margin-bottom: 1rem;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
+.info-box li strong {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.task-box {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #f59e0b;
+}
+
+.task-box p {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #92400e;
+}
+
 /* ===== Final Slide ===== */
 .final-slide {
     display: flex;

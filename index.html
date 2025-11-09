@@ -89,18 +89,130 @@
                     </div>
                 </div>
                 <div>
-                    <h3>Erste Schritte:</h3>
-                    <ol class="setup-steps">
-                        <li>VS Code öffnen</li>
-                        <li>"Ordner öffnen" → Neuen Ordner erstellen</li>
-                        <li>Datei erstellen: <code>index.html</code></li>
-                        <li>Extension installieren: "Live Server"</li>
-                    </ol>
+                    <h3>Was wir brauchen:</h3>
+                    <ul class="setup-steps">
+                        <li>✅ VS Code installiert</li>
+                        <li>✅ Internet-Browser (Chrome, Firefox, etc.)</li>
+                        <li>✅ Unser Projekt-Startpaket von GitHub</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 5: HTML Grundgerüst -->
+        <!-- Slide 5: Projekt herunterladen -->
+        <section class="slide">
+            <h1>📦 Projekt Setup - Schritt für Schritt</h1>
+            <div class="project-setup">
+                <div class="setup-intro">
+                    <p style="font-size: 1.2rem; text-align: center; color: #667eea; font-weight: bold;">
+                        Wir starten mit einem fertigen Projekt-Template, das alle Beispiele und eine gute Struktur enthält!
+                    </p>
+                </div>
+
+                <div class="setup-steps-detailed">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>GitHub aufrufen</h3>
+                            <p>Öffne im Browser: <code>https://github.com/Marioarttv/WebDev101</code></p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Projekt herunterladen</h3>
+                            <p>Klicke auf den grünen <strong>"&lt;&gt; Code"</strong> Button</p>
+                            <p>Wähle <strong>"Download ZIP"</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>ZIP entpacken</h3>
+                            <p>Rechtsklick auf die heruntergeladene Datei</p>
+                            <p>Wähle <strong>"Alle extrahieren..."</strong> oder <strong>"Entpacken nach..."</strong></p>
+                            <p>📁 Am besten in deinen Dokumente-Ordner</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>In VS Code öffnen</h3>
+                            <p>VS Code starten → <strong>"Datei"</strong> → <strong>"Ordner öffnen"</strong></p>
+                            <p>Wähle den entpackten <strong>"WebDev101"</strong> Ordner</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Live Server installieren</h3>
+                            <p>In VS Code: Extensions-Symbol (linke Seite)</p>
+                            <p>Suche nach <strong>"Live Server"</strong></p>
+                            <p>Klicke auf <strong>"Install"</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="success-message">
+                    <h3>🎉 Fertig! Du bist bereit zu coden!</h3>
+                    <p>Im <code>beispiele/</code> Ordner findest du Vorlagen zum Lernen</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Projekt-Struktur -->
+        <section class="slide">
+            <h1>📂 Deine Projekt-Struktur</h1>
+            <div class="two-column">
+                <div>
+                    <h3>Was ist im Projekt?</h3>
+                    <pre style="background: #2d3748; color: #68d391; padding: 1.5rem; border-radius: 10px; font-size: 0.9rem;"><code>WebDev101/
+│
+├── 📄 index.html
+│   └── Diese Präsentation!
+│
+├── 🎨 styles.css
+│   └── Das Styling
+│
+├── ⚙️ script.js
+│   └── Die Interaktivität
+│
+├── 📚 beispiele/
+│   ├── 01-grundgeruest.html
+│   ├── 02-ueber-mich.html
+│   ├── 03-mit-css.html
+│   ├── style.css
+│   └── README.md
+│
+└── 📖 README.md
+    └── Anleitung</code></pre>
+                </div>
+                <div>
+                    <h3>Der beispiele/ Ordner:</h3>
+                    <div class="info-box">
+                        <p><strong>Hier lernst du!</strong></p>
+                        <ul>
+                            <li><strong>01-grundgeruest.html</strong><br>Das absolute Minimum</li>
+                            <li><strong>02-ueber-mich.html</strong><br>HTML ohne Styling</li>
+                            <li><strong>03-mit-css.html</strong><br>Schön gestylt mit CSS!</li>
+                        </ul>
+                    </div>
+
+                    <h3 style="margin-top: 2rem;">Deine erste Aufgabe:</h3>
+                    <div class="task-box">
+                        <p>Öffne <code>beispiele/01-grundgeruest.html</code></p>
+                        <p>Rechtsklick → "Open with Live Server"</p>
+                        <p>🎉 Deine erste Website läuft!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: HTML Grundgerüst -->
         <section class="slide">
             <h1>📄 HTML Grundgerüst</h1>
             <div class="code-explanation">
@@ -131,7 +243,7 @@
             </div>
         </section>
 
-        <!-- Slide 6: Wichtige HTML Tags -->
+        <!-- Slide 8: Wichtige HTML Tags -->
         <section class="slide">
             <h1>🏷️ Die wichtigsten HTML-Tags</h1>
             <div class="tag-grid">
@@ -170,7 +282,7 @@
             </div>
         </section>
 
-        <!-- Slide 7: HTML Beispiel -->
+        <!-- Slide 9: HTML Beispiel -->
         <section class="slide">
             <h1>✍️ Beispiel: Über mich Seite</h1>
             <div class="split-view">
@@ -207,7 +319,7 @@
             </div>
         </section>
 
-        <!-- Slide 8: CSS Einführung -->
+        <!-- Slide 10: CSS Einführung -->
         <section class="slide">
             <h1>🎨 CSS - Styling für deine Website</h1>
             <div class="two-column">
@@ -247,7 +359,7 @@ p {
             </div>
         </section>
 
-        <!-- Slide 9: CSS Properties -->
+        <!-- Slide 11: CSS Properties -->
         <section class="slide">
             <h1>🎯 Wichtige CSS-Eigenschaften</h1>
             <div class="css-properties">
@@ -287,7 +399,7 @@ p {
             </div>
         </section>
 
-        <!-- Slide 10: CSS Beispiel -->
+        <!-- Slide 12: CSS Beispiel -->
         <section class="slide">
             <h1>✨ Vorher/Nachher mit CSS</h1>
             <div class="before-after">
@@ -319,7 +431,7 @@ button {
             </div>
         </section>
 
-        <!-- Slide 11: Übung -->
+        <!-- Slide 13: Übung -->
         <section class="slide">
             <h1>💪 Praktische Übung</h1>
             <div class="exercise-box">
@@ -342,7 +454,7 @@ button {
             </div>
         </section>
 
-        <!-- Slide 12: Ausblick nächste Stunden -->
+        <!-- Slide 14: Ausblick nächste Stunden -->
         <section class="slide">
             <h1>🔮 Was kommt als Nächstes?</h1>
             <div class="next-lessons">
@@ -370,7 +482,7 @@ button {
             </div>
         </section>
 
-        <!-- Slide 13: Bewertungskriterien -->
+        <!-- Slide 15: Bewertungskriterien -->
         <section class="slide">
             <h1>📊 Wie wird bewertet?</h1>
             <div class="grading-criteria">
@@ -421,7 +533,7 @@ button {
             </div>
         </section>
 
-        <!-- Slide 14: Notenskala -->
+        <!-- Slide 16: Notenskala -->
         <section class="slide">
             <h1>📈 Notenskala</h1>
             <div class="grade-scale">
@@ -459,7 +571,7 @@ button {
             </p>
         </section>
 
-        <!-- Slide 15: Ressourcen -->
+        <!-- Slide 17: Ressourcen -->
         <section class="slide">
             <h1>📚 Hilfreiche Ressourcen</h1>
             <div class="resources-grid">
@@ -496,16 +608,17 @@ button {
             </div>
         </section>
 
-        <!-- Slide 16: Los geht's! -->
+        <!-- Slide 18: Los geht's! -->
         <section class="slide">
             <h1>🚀 Bereit zum Coden?</h1>
             <div class="final-slide">
                 <div class="checklist-final">
                     <h2>Checklist:</h2>
-                    <div class="check-item">✅ VS Code installiert & geöffnet</div>
-                    <div class="check-item">✅ Projektordner erstellt</div>
-                    <div class="check-item">✅ index.html Datei angelegt</div>
+                    <div class="check-item">✅ Projekt von GitHub heruntergeladen</div>
+                    <div class="check-item">✅ ZIP entpackt</div>
+                    <div class="check-item">✅ In VS Code geöffnet</div>
                     <div class="check-item">✅ Live Server Extension installiert</div>
+                    <div class="check-item">✅ Beispiel-Dateien getestet</div>
                 </div>
                 <div class="start-coding">
                     <h2 style="font-size: 3rem; margin: 2rem 0;">Let's Code! 💻</h2>
@@ -518,7 +631,7 @@ button {
     <!-- Navigation -->
     <div class="navigation">
         <button id="prevBtn" class="nav-btn">← Zurück</button>
-        <span id="slideCounter" class="slide-counter">1 / 16</span>
+        <span id="slideCounter" class="slide-counter">1 / 18</span>
         <button id="nextBtn" class="nav-btn">Weiter →</button>
     </div>
 
