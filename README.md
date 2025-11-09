@@ -56,7 +56,7 @@ WebDev101/
 └── README.md       # Diese Datei
 ```
 
-## 📚 Folienübersicht (18 Slides)
+## 📚 Folienübersicht (19 Slides)
 
 1. **Titelfolie** - Einführung
 2. **Motivation** - Warum Webentwicklung?
@@ -75,7 +75,8 @@ WebDev101/
 15. **Bewertung** - Kriterien
 16. **Notenskala** - Punkteverteilung
 17. **Ressourcen** - Hilfreiche Links
-18. **Los geht's!** - Start ins Coding
+18. **Beispiele & Material** - Links zu allen Beispiel-Dateien
+19. **Los geht's!** - Start ins Coding
 
 ## 🎯 Bewertungskriterien für Schülerprojekte (100 Punkte)
 
