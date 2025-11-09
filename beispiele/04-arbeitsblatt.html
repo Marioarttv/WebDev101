@@ -3,265 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS Arbeitsblatt</title>
+    <title>HTML & CSS Arbeitsblatt - Fragen</title>
     <style>
-        /* ============================
-           AUFGABE 1: Basis-Styling
-           Fülle die fehlenden CSS-Werte ein!
-           ============================ */
-
         body {
             font-family: Arial, sans-serif;
-            /* AUFGABE: Setze eine Hintergrundfarbe (z.B. #f0f8ff) */
-            background-color: ;
-            /* AUFGABE: Setze den Außenabstand auf 0 */
-            margin: ;
-            /* AUFGABE: Setze den Innenabstand auf 20px */
-            padding: ;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
         }
 
         .container {
-            /* AUFGABE: Setze die maximale Breite auf 800px */
-            max-width: ;
-            /* AUFGABE: Zentriere den Container mit margin (Tipp: 0 auto) */
-            margin: ;
-            /* AUFGABE: Setze Hintergrundfarbe auf white */
-            background-color: ;
-            /* AUFGABE: Setze Innenabstand auf 40px */
-            padding: ;
-            /* AUFGABE: Setze border-radius auf 15px für runde Ecken */
-            border-radius: ;
-            /* AUFGABE: Füge einen Schatten hinzu: 0 10px 30px rgba(0,0,0,0.1) */
-            box-shadow: ;
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
-
-        /* ============================
-           AUFGABE 2: Überschriften
-           ============================ */
 
         h1 {
-            /* AUFGABE: Setze die Textfarbe auf #667eea (Lila-Blau) */
-            color: ;
-            /* AUFGABE: Setze die Schriftgröße auf 2.5rem */
-            font-size: ;
-            /* AUFGABE: Zentriere den Text */
-            text-align: ;
-            /* AUFGABE: Setze unteren Abstand auf 30px */
-            margin-bottom: ;
+            color: #667eea;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
 
-        h2 {
-            /* AUFGABE: Setze die Textfarbe auf #764ba2 (Lila) */
-            color: ;
-            /* AUFGABE: Setze die Schriftgröße auf 1.8rem */
-            font-size: ;
-            /* AUFGABE: Füge einen unteren Rahmen hinzu: 3px solid #667eea */
-            border-bottom: ;
-            /* AUFGABE: Setze unteren Innenabstand auf 10px */
-            padding-bottom: ;
-            /* AUFGABE: Setze oberen Außenabstand auf 30px */
-            margin-top: ;
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
         }
 
-        /* ============================
-           AUFGABE 3: Listen
-           ============================ */
-
-        .aufgaben-liste {
-            /* AUFGABE: Setze Hintergrundfarbe auf #f7fafc (Hellgrau) */
-            background-color: ;
-            /* AUFGABE: Setze Innenabstand auf 20px */
-            padding: ;
-            /* AUFGABE: Setze border-radius auf 10px */
-            border-radius: ;
-            /* AUFGABE: Füge einen linken Rahmen hinzu: 4px solid #667eea */
-            border-left: ;
-            /* AUFGABE: Setze unteren Außenabstand auf 20px */
-            margin-bottom: ;
+        .info-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
         }
 
-        .aufgaben-liste li {
-            /* AUFGABE: Setze unteren Außenabstand auf 10px */
-            margin-bottom: ;
-            /* AUFGABE: Setze Zeilenhöhe auf 1.6 */
-            line-height: ;
+        .question-section {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border-left: 4px solid #667eea;
         }
 
-        /* ============================
-           AUFGABE 4: Highlight-Box
-           ============================ */
-
-        .highlight {
-            /* AUFGABE: Füge einen Verlauf als Hintergrund hinzu */
-            /* linear-gradient(135deg, #667eea 0%, #764ba2 100%) */
-            background: ;
-            /* AUFGABE: Setze Textfarbe auf white */
-            color: ;
-            /* AUFGABE: Setze Innenabstand auf 25px */
-            padding: ;
-            /* AUFGABE: Setze border-radius auf 15px */
-            border-radius: ;
-            /* AUFGABE: Zentriere den Text */
-            text-align: ;
-            /* AUFGABE: Setze oberen Außenabstand auf 30px */
-            margin-top: ;
+        .question-section h2 {
+            color: #667eea;
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 15px;
         }
 
-        .highlight h3 {
-            /* AUFGABE: Setze Textfarbe auf white */
-            color: ;
-            /* AUFGABE: Setze unteren Außenabstand auf 10px */
-            margin-bottom: ;
+        .question {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #e2e8f0;
         }
 
-        /* ============================
-           AUFGABE 5: Button
-           ============================ */
-
-        .button {
-            /* AUFGABE: Setze display auf inline-block */
-            display: ;
-            /* AUFGABE: Setze Hintergrundfarbe auf #667eea */
-            background-color: ;
-            /* AUFGABE: Setze Textfarbe auf white */
-            color: ;
-            /* AUFGABE: Setze Innenabstand auf 15px 30px (oben/unten links/rechts) */
-            padding: ;
-            /* AUFGABE: Entferne Unterstreichung: none */
-            text-decoration: ;
-            /* AUFGABE: Setze border-radius auf 25px für runde Ecken */
-            border-radius: ;
-            /* AUFGABE: Setze Schrift-Gewicht auf bold */
-            font-weight: ;
-            /* AUFGABE: Setze Schriftgröße auf 1.1rem */
-            font-size: ;
-            /* AUFGABE: Setze transition für smooth hover: all 0.3s ease */
-            transition: ;
+        .question strong {
+            color: #764ba2;
+            display: block;
+            margin-bottom: 8px;
         }
 
-        .button:hover {
-            /* AUFGABE: Ändere Hintergrundfarbe beim Hover auf #764ba2 */
-            background-color: ;
-            /* AUFGABE: Vergrößere beim Hover: scale(1.05) */
-            transform: ;
+        .answer-space {
+            background: #edf2f7;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px dashed #cbd5e0;
+            min-height: 30px;
+            font-style: italic;
+            color: #718096;
         }
 
-        /* ============================
-           AUFGABE 6: Info-Box (Bonus)
-           ============================ */
-
-        .info {
-            /* AUFGABE: Setze Hintergrundfarbe auf #fff3cd (helles Gelb) */
-            background-color: ;
-            /* AUFGABE: Füge einen 2px solid Rahmen in #ffc107 (Orange) hinzu */
-            border: ;
-            /* AUFGABE: Setze Innenabstand auf 15px */
-            padding: ;
-            /* AUFGABE: Setze border-radius auf 8px */
-            border-radius: ;
-            /* AUFGABE: Setze Abstand auf 20px oben und unten, 0 links und rechts */
-            margin: ;
+        .success-box {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            color: #155724;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
         }
 
-        /* ============================
-           AUFGABE 7: Success-Box (Bonus)
-           ============================ */
-
-        .success {
-            /* AUFGABE: Setze Hintergrundfarbe auf #d4edda (helles Grün) */
-            background-color: ;
-            /* AUFGABE: Füge einen 2px solid Rahmen in #28a745 (Grün) hinzu */
-            border: ;
-            /* AUFGABE: Setze Textfarbe auf #155724 (Dunkelgrün) */
-            color: ;
-            /* AUFGABE: Setze Innenabstand auf 20px */
-            padding: ;
-            /* AUFGABE: Setze border-radius auf 10px */
-            border-radius: ;
-            /* AUFGABE: Zentriere den Text */
-            text-align: ;
-            /* AUFGABE: Setze oberen Außenabstand auf 30px */
-            margin-top: ;
+        code {
+            background: #2d3748;
+            color: #68d391;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
         }
     </style>
 </head>
 <body>
-    <!-- ============================
-         HTML TEIL - Fülle die Lücken!
-         ============================ -->
-
     <div class="container">
-        <!-- AUFGABE 8: Füge eine h1-Überschrift ein mit dem Text "HTML & CSS Arbeitsblatt" -->
+        <h1>📝 HTML & CSS Arbeitsblatt</h1>
+        <p class="subtitle">Beantworte die Fragen direkt im HTML-Code! (Zwischen den Kommentar-Tags)</p>
 
-
-        <!-- AUFGABE 9: Füge einen Absatz (p) ein: "Willkommen zum interaktiven Arbeitsblatt!" -->
-
-
-        <div class="info">
-            <strong>💡 Anleitung:</strong> Suche im Code nach den AUFGABE-Kommentaren und fülle die leeren Stellen aus.
-            Speichere mit <kbd>Strg + S</kbd> und schaue dir das Ergebnis im Browser an!
+        <div class="info-box">
+            <strong>💡 Anleitung:</strong> Öffne diese Datei in VS Code.
+            Suche nach <code>ANTWORT HIER:</code> und schreibe deine Antworten zwischen die Kommentar-Tags <code>&lt;!-- ANTWORT: ... --&gt;</code>
+            Speichere mit <kbd>Strg + S</kbd> und aktualisiere den Browser!
         </div>
 
-        <!-- AUFGABE 10: Füge eine h2-Überschrift ein: "Meine Aufgaben" -->
+        <!-- ========================
+             TEIL 1: HTML GRUNDLAGEN
+             ======================== -->
 
+        <div class="question-section">
+            <h2>📄 Teil 1: HTML Grundlagen</h2>
 
-        <!-- AUFGABE 11: Erstelle eine ungeordnete Liste (ul) mit der Klasse "aufgaben-liste" -->
-        <!-- Füge 4 Listen-Einträge (li) hinzu: -->
-        <!-- 1. HTML lernen -->
-        <!-- 2. CSS verstehen -->
-        <!-- 3. Webseiten gestalten -->
-        <!-- 4. Eigenes Projekt starten -->
+            <div class="question">
+                <strong>Frage 1: Was bedeutet HTML?</strong>
+                <p>Schreibe die ausgeschriebene Bedeutung von HTML.</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
 
+                </div>
+            </div>
 
+            <div class="question">
+                <strong>Frage 2: Nenne 5 HTML-Tags</strong>
+                <p>Liste 5 verschiedene HTML-Tags auf (z.B. &lt;p&gt;, ...).</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
 
-        <!-- AUFGABE 12: Füge eine h2-Überschrift ein: "Über mich" -->
+                </div>
+            </div>
 
+            <div class="question">
+                <strong>Frage 3: Was macht das &lt;h1&gt; Tag?</strong>
+                <p>Erkläre, wofür das h1-Tag verwendet wird.</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
 
-        <!-- AUFGABE 13: Füge einen Absatz ein mit 2-3 Sätzen über dich -->
+                </div>
+            </div>
 
+            <div class="question">
+                <strong>Frage 4: Unterschied &lt;ul&gt; und &lt;ol&gt;</strong>
+                <p>Was ist der Unterschied zwischen einer ungeordneten und einer geordneten Liste?</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
 
-        <!-- AUFGABE 14: Füge eine h2-Überschrift ein: "Meine Hobbys" -->
+                </div>
+            </div>
 
+            <div class="question">
+                <strong>Frage 5: HTML-Grundgerüst</strong>
+                <p>Welche 3 Haupt-Bereiche hat jede HTML-Seite? (Tipp: Beginnt mit &lt;!DOCTYPE ...)</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
 
-        <!-- AUFGABE 15: Erstelle eine geordnete Liste (ol) mit mindestens 3 Hobbys -->
-
-
-
-        <!-- Highlight-Box -->
-        <div class="highlight">
-            <h3>🎯 Gut gemacht!</h3>
-            <p>Wenn du alle Aufgaben gelöst hast, sollte diese Box schön aussehen!</p>
+                </div>
+            </div>
         </div>
 
-        <!-- AUFGABE 16: Füge eine h2-Überschrift ein: "Kontakt" -->
+        <!-- ========================
+             TEIL 2: CSS GRUNDLAGEN
+             ======================== -->
 
+        <div class="question-section">
+            <h2>🎨 Teil 2: CSS Grundlagen</h2>
 
-        <!-- AUFGABE 17: Erstelle einen Link mit der Klasse "button" -->
-        <!-- Der Link soll zu "mailto:deine@email.de" führen -->
-        <!-- Text: "Schreib mir!" -->
+            <div class="question">
+                <strong>Frage 6: Was bedeutet CSS?</strong>
+                <p>Schreibe die ausgeschriebene Bedeutung von CSS.</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
 
+                </div>
+            </div>
 
-        <!-- Erfolgs-Nachricht -->
-        <div class="success">
+            <div class="question">
+                <strong>Frage 7: Wofür braucht man CSS?</strong>
+                <p>Erkläre in 1-2 Sätzen, wozu CSS verwendet wird.</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
+
+                </div>
+            </div>
+
+            <div class="question">
+                <strong>Frage 8: Nenne 3 CSS-Eigenschaften</strong>
+                <p>Liste 3 CSS-Properties auf (z.B. color, ...).</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
+
+                </div>
+            </div>
+
+            <div class="question">
+                <strong>Frage 9: Wie bindet man CSS ein?</strong>
+                <p>Wie kann man eine externe CSS-Datei in HTML einbinden? (Welches Tag?)</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
+
+                </div>
+            </div>
+
+            <div class="question">
+                <strong>Frage 10: Was macht "background-color"?</strong>
+                <p>Erkläre, was die CSS-Eigenschaft background-color macht.</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================
+             TEIL 3: PRAXIS-AUFGABEN
+             ======================== -->
+
+        <div class="question-section">
+            <h2>💪 Teil 3: Mini-Praxis</h2>
+
+            <div class="question">
+                <strong>Aufgabe 1: Erstelle eine Überschrift</strong>
+                <p>Schreibe unterhalb dieses Texts eine h2-Überschrift mit dem Text "Meine erste Überschrift".</p>
+                <!-- DEINE ÜBERSCHRIFT HIER: -->
+
+            </div>
+
+            <div class="question">
+                <strong>Aufgabe 2: Erstelle einen Absatz</strong>
+                <p>Schreibe einen Absatz (&lt;p&gt;) mit 1-2 Sätzen über dein Lieblingshobby.</p>
+                <!-- DEIN ABSATZ HIER: -->
+
+            </div>
+
+            <div class="question">
+                <strong>Aufgabe 3: Erstelle eine Liste</strong>
+                <p>Erstelle eine ungeordnete Liste mit 3 Dingen, die du gerne isst.</p>
+                <!-- DEINE LISTE HIER: -->
+
+            </div>
+        </div>
+
+        <!-- ========================
+             TEIL 4: REFLEXION
+             ======================== -->
+
+        <div class="question-section">
+            <h2>💭 Teil 4: Reflexion</h2>
+
+            <div class="question">
+                <strong>Frage 11: Was hast du gelernt?</strong>
+                <p>Schreibe in 2-3 Sätzen, was du heute über HTML und CSS gelernt hast.</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
+
+                </div>
+            </div>
+
+            <div class="question">
+                <strong>Frage 12: Was möchtest du noch lernen?</strong>
+                <p>Was interessiert dich am meisten an Webentwicklung?</p>
+                <div class="answer-space">
+                    <!-- ANTWORT HIER: -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="success-box">
             <h3>✅ Geschafft!</h3>
-            <p>Wenn diese Box grün ist und alles schön aussieht, hast du das Arbeitsblatt erfolgreich ausgefüllt!</p>
+            <p>Wenn du alle Fragen beantwortet hast, hast du dein erstes HTML/CSS-Arbeitsblatt fertig!</p>
             <p><strong>Super Arbeit! 🎉</strong></p>
         </div>
     </div>
-
-    <!-- ============================
-         ZUSAMMENFASSUNG:
-
-         CSS-Aufgaben: 7 (Basis, Überschriften, Listen, Highlight, Button, Info-Box, Success-Box)
-         HTML-Aufgaben: 10 (Überschriften, Absätze, Listen, Link)
-         Gesamt: 17 Aufgaben
-
-         ZUSATZAUFGABE (Optional):
-         Experimentiere mit den CSS-Werten!
-         - Ändere Farben
-         - Probiere andere Schriftgrößen
-         - Füge eigene Elemente hinzu
-         ============================ -->
-
 </body>
 </html>

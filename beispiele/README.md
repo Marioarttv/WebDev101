@@ -25,18 +25,27 @@ Die gleiche Seite, aber mit schönem Design!
 - Button-Styling
 - Responsive Design
 
-### 4. `04-arbeitsblatt.html` ⭐ NEU
-Interaktives Arbeitsblatt zum Üben!
-- 17 Aufgaben zu HTML & CSS (7 CSS + 10 HTML)
-- Lücken direkt im Code ausfüllen
-- Live-Vorschau beim Speichern
-- Info-Box und Success-Box werden erst schön, wenn CSS richtig ist
-- **Perfekt für die erste Unterrichtsstunde!**
+### 4. `04-arbeitsblatt.html` ⭐ NEU - Für Anfänger!
+**Frage-Antwort Arbeitsblatt** (perfekt für die erste Stunde!)
+- 12 Fragen zu HTML & CSS Basics
+- Antworten direkt im HTML-Code eintragen (statt in Word!)
+- 3 Mini-Praxis-Aufgaben (Überschrift, Absatz, Liste erstellen)
+- Einfacher Einstieg, nicht zu komplex
+- **Ideal für die erste Unterrichtsstunde!**
 
 ### 5. `04-arbeitsblatt-loesung.html` 🔒
-Musterlösung für Lehrkräfte
-- Vollständig ausgefülltes Arbeitsblatt
+Musterlösung zum Arbeitsblatt
+- Beispielantworten für alle Fragen
 - Zum Vergleichen und Korrigieren
+
+### 6. `04-arbeitsblatt-fortgeschritten.html` 💪
+**Fortgeschrittenes Arbeitsblatt** (für später oder schnelle Schüler)
+- 17 Aufgaben: CSS-Lücken ausfüllen + HTML schreiben
+- Komplettes Styling selbst erstellen
+- Für Schüler mit mehr Vorkenntnissen
+
+### 7. `04-arbeitsblatt-fortgeschritten-loesung.html` 🔒
+Musterlösung zum fortgeschrittenen Arbeitsblatt
 
 ## 🎯 So nutzt du die Beispiele:
 
@@ -49,10 +58,11 @@ Musterlösung für Lehrkräfte
 
 ### 🎯 Start hier: Arbeitsblatt
 1. Öffne `04-arbeitsblatt.html` in VS Code
-2. Suche nach den `AUFGABE`-Kommentaren
-3. Fülle die Lücken im HTML und CSS aus
+2. Suche nach `ANTWORT HIER:`-Kommentaren
+3. Schreibe deine Antworten direkt im HTML-Code
 4. Speichere mit `Strg + S` und schaue das Ergebnis mit Live Server an
 5. Vergleiche deine Lösung mit `04-arbeitsblatt-loesung.html`
+6. **Für Fortgeschrittene:** Probiere danach `04-arbeitsblatt-fortgeschritten.html`
 
 ### Einfach:
 - ✏️ Ändere die Texte in `02-ueber-mich.html` zu deinen eigenen Infos
