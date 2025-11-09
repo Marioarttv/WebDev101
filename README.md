@@ -77,27 +77,36 @@ WebDev101/
 17. **Ressourcen** - Hilfreiche Links
 18. **Los geht's!** - Start ins Coding
 
-## 🎯 Bewertungskriterien für Schülerprojekte
+## 🎯 Bewertungskriterien für Schülerprojekte (100 Punkte)
 
-### Technische Umsetzung (40%)
-- ✅ Valides HTML-Grundgerüst
-- ✅ Mindestens 10 verschiedene CSS-Properties
-- ✅ Responsive Design
-- ✅ Saubere Code-Struktur
+### 1. Technische Umsetzung (35 Punkte)
+- [ ] HTML-Grundgerüst vollständig (5P)
+- [ ] Min. 10 verschiedene HTML-Tags genutzt (5P)
+- [ ] Min. 15 CSS-Properties verwendet (10P)
+- [ ] Code ist sauber eingerückt (5P)
+- [ ] Externe CSS-Datei korrekt eingebunden (5P)
+- [ ] Code-Kommentare/Dokumentation vorhanden (5P)
 
-### Kreativität & Inhalt (30%)
-- ✅ Eigene Idee umgesetzt
-- ✅ Konsistentes Design
-- ✅ Sinnvoller Inhalt
+### 2. Kreativität & Design (25 Punkte)
+- [ ] Eigenes Thema/Idee umgesetzt (10P)
+- [ ] Farbschema ist stimmig (5P)
+- [ ] Layout ist ansprechend gestaltet (5P)
+- [ ] Eigener Content (nicht nur Beispiel-Texte) (5P)
 
-### Arbeitsprozess (20%)
-- ✅ Selbstständiges Arbeiten
-- ✅ Sinnvoller KI-Einsatz
-- ✅ Problemlösungskompetenz
+### 3. Präsentation (25 Punkte)
+- [ ] Projekt wird vorgestellt (2-3 Min) (10P)
+- [ ] Erklärung einer technischen Herausforderung (10P)
+- [ ] Zeigt, was gelernt wurde (5P)
 
-### Präsentation (10%)
-- ✅ 2-Min-Vorstellung
-- ✅ Erklärung einer Herausforderung
+### 4. Arbeitsprozess (15 Punkte)
+- [ ] Selbstständiges Arbeiten (5P)
+- [ ] Sinnvoller Einsatz von KI (nicht nur Copy&Paste) (5P)
+- [ ] Bei Problemen Lösungen gesucht (5P)
+
+### 💡 Bonus: Responsive Design (+10 Punkte)
+- [ ] Website funktioniert auf verschiedenen Bildschirmgrößen (Handy, Tablet, Desktop)
+
+**📖 Beispiel:** Siehe `beispiele/05-ueber-mich-dokumentiert.html` für ein vollständig dokumentiertes Projekt mit Responsive Design!
 
 ## 📖 Für Lehrkräfte
 

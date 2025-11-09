@@ -25,6 +25,14 @@ Die gleiche Seite, aber mit schönem Design!
 - Button-Styling
 - Responsive Design
 
+### 3b. `05-ueber-mich-dokumentiert.html` ⭐ BEISPIEL FÜR BEWERTUNG
+**Vollständig dokumentiertes Projekt** (Zeigt alle Bewertungskriterien!)
+- Ausführliche Code-Kommentare in HTML & CSS
+- Responsive Design mit 2 Media Queries
+- 20+ CSS-Properties verwendet
+- Semantische HTML-Tags (header, main, section, footer)
+- **Perfekt als Vorlage für eigenes Projekt!**
+
 ### 4. `04-arbeitsblatt.html` ⭐ NEU - Für Anfänger!
 **Frage-Antwort Arbeitsblatt** (perfekt für die erste Stunde!)
 - 12 Fragen zu HTML & CSS Basics
